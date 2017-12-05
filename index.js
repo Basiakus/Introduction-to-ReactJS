@@ -41,13 +41,9 @@ var games = [{
 ];
 
 var gamesListMap = games.map(function(game) {
-	return React.createElement('li', {
-			key: game.id
-		},
+	return React.createElement('li', {key: game.id},
 		React.createElement('h3', {}, game.title),
-		React.createElement('img', {
-			src: game.img
-		}),
+		React.createElement('img', {src: game.img}),
 		React.createElement('p', {}, game.publisher),
 		React.createElement('p', {}, game.platform),
 	);
